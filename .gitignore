@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# turbo / next
+.turbo/
+**/.turbo/
+.next/
+out/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+.dev-wallet/
+*.env.wallet
+
+# logs
+*.log
+
+# foundry / solidity artifacts
+contracts/cache/
+contracts/out/
+contracts/artifacts/
+contracts/typechain-types/
+contracts/broadcast/
+contracts/lib/
+contracts/foundry.lock
+
+# misc
+.DS_Store
+
+# build outputs
+dist/
+**/dist/
