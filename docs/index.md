@@ -1,31 +1,34 @@
-# Gardena Docs
+# Gardena Documentation
 
-Minimal docs for quick onboarding.
+Gardena is beginner-first AI DeFi farming platform on Mantle.
 
-## 1) What is Gardena
-Gardena is AI DeFi farming app on Mantle.
-User picks crop strategy. Agent executes with bounded autonomy.
+## Why Gardena Exists
+New users struggle with DeFi because tooling is fragmented, risk is unclear, and execution steps are technical.
+Gardena abstracts this into crop-based strategies with transparent AI decisions and strict guardrails.
 
-## 2) Core Apps
-- `apps/web` — user interface
-- `apps/agent` — planning + policy + execution context
-- `contracts` — onchain identity/log/policy (Foundry)
+## Problem Statement
+1. DeFi UX too technical for newcomers.
+2. Risk profile not obvious before execution.
+3. AI automation often feels like black box.
+4. Users need emergency control and clear audit trail.
 
-## 3) Quick Start
-```bash
-pnpm install
-pnpm dev
-```
+## Product Goals
+- Make first DeFi action fast and understandable.
+- Keep AI autonomy bounded by user policy.
+- Log every decision in verifiable format.
+- Provide clear AI vs baseline performance view.
 
-Build checks:
-```bash
-pnpm --filter web build
-pnpm --filter @gardena/agent build
-pnpm --filter @gardena/contracts test
-```
-
-## 4) Read Next
-- [Architecture](./architecture.md)
-- [Agent Flow](./agent-flow.md)
-- [Contracts](./contracts.md)
-- [Environment](./environment.md)
+## Documentation Map
+- [01 — Vision & Product](./01-vision-product.md)
+- [02 — User Journey](./02-user-journey.md)
+- [03 — System Architecture](./03-system-architecture.md)
+- [04 — Technology A-Z](./04-technology-a-z.md)
+- [05 — Agent Design](./05-agent-design.md)
+- [06 — Smart Contracts](./06-smart-contracts.md)
+- [07 — Data Model](./07-data-model.md)
+- [08 — API & Integration](./08-api-integration.md)
+- [09 — Security & Risk](./09-security-risk.md)
+- [10 — Local Setup](./10-local-setup.md)
+- [11 — Test & Quality](./11-test-quality.md)
+- [12 — Deployment & Ops](./12-deployment-ops.md)
+- [13 — Roadmap](./13-roadmap.md)

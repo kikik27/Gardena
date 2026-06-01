@@ -1,0 +1,18 @@
+# 06 — Smart Contracts
+
+## AgentIdentity
+Stores registration and reputation mapping.
+
+## DecisionLog
+Stores hash of offchain decision payload and outcome state.
+
+## RiskPolicy
+Stores per-user guardrails and supports emergency pause.
+
+## Foundry Commands
+```bash
+cd contracts
+forge build
+forge test -vv
+forge script script/Deploy.s.sol:DeployScript --rpc-url $MANTLE_RPC_URL --broadcast
+```
