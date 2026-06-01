@@ -1,0 +1,24 @@
+# Environment
+
+## Web (`apps/web/.env.local`)
+```bash
+NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=
+NEXT_PUBLIC_MANTLE_RPC_URL=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+## Agent (`apps/agent/.env`)
+```bash
+OPENAI_API_KEY=
+MANTLE_RPC_URL=
+MANTLE_CHAIN_ID=5000
+MANTLE_NETWORK=mantle
+AGENT_IDENTITY_ADDRESS=
+DECISION_LOG_ADDRESS=
+RISK_POLICY_ADDRESS=
+PRIVATE_KEY=
+```
+
+## Security
+Never commit `.env*` or `.dev-wallet/`.

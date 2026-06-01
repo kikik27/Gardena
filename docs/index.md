@@ -1,22 +1,31 @@
-# Mantle Garden Docs
+# Gardena Docs
 
-## What
-Beginner-first DeFi app. User pick crop strategy. AI execute with guardrails.
+Minimal docs for quick onboarding.
 
-## Flow
-1. User pick crop + amount
-2. Agent plan strategy
-3. Policy check block/allow
-4. Execute tx on Mantle
-5. Log decision + outcome
+## 1) What is Gardena
+Gardena is AI DeFi farming app on Mantle.
+User picks crop strategy. Agent executes with bounded autonomy.
 
-## Contracts
-- AgentIdentity
-- DecisionLog
-- RiskPolicy
+## 2) Core Apps
+- `apps/web` — user interface
+- `apps/agent` — planning + policy + execution context
+- `contracts` — onchain identity/log/policy (Foundry)
 
-## Repo map
-- `apps/web`
-- `apps/agent`
-- `contracts`
-- `supabase`
+## 3) Quick Start
+```bash
+pnpm install
+pnpm dev
+```
+
+Build checks:
+```bash
+pnpm --filter web build
+pnpm --filter @gardena/agent build
+pnpm --filter @gardena/contracts test
+```
+
+## 4) Read Next
+- [Architecture](./architecture.md)
+- [Agent Flow](./agent-flow.md)
+- [Contracts](./contracts.md)
+- [Environment](./environment.md)
