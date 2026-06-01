@@ -1,0 +1,62 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Gardena",
+  "colors": {
+    "primary": "#22c55e",
+    "light": "#22c55e",
+    "dark": "#86efac"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/index",
+              "docs/01-vision-product",
+              "docs/02-user-journey"
+            ]
+          },
+          {
+            "group": "Technical Design",
+            "pages": [
+              "docs/03-system-architecture",
+              "docs/04-technology-a-z",
+              "docs/05-agent-design",
+              "docs/06-smart-contracts",
+              "docs/07-data-model",
+              "docs/08-api-integration"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "docs/09-security-risk",
+              "docs/10-local-setup",
+              "docs/11-test-quality",
+              "docs/12-deployment-ops",
+              "docs/13-roadmap"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/kikik27/Gardena"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/kikik27/Gardena"
+    }
+  }
+}
